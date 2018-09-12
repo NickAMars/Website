@@ -1,0 +1,40 @@
+
+  :root{
+  --color-primary: #7a5230;
+  --color-primary-light:  #aa7243;
+  --color-primary-dark:  #49311c;
+
+  --color-secondary:#ffc04c;
+  --color-secondary-light:#ffb732 ;
+  --color-secondary-dark:#ffa500;
+
+  --color-tertiary: 	#008000;
+  --color-tertiary-light: #228B22;
+  --color-tertiary-dark: #006400;
+
+  --color-white: #fff;
+  --color-grey: #777;
+  --color-grey-light: #EEE;
+  --color-black: #000;
+
+  --shadow-background: rgba(#000, 0.23);
+  }
+
+  *,*::after, *::before{
+      padding: 0;
+      margin: 0;
+      box-sizing: inherit;
+    }
+html{
+  /*set font to 10px  also  did global reset*/
+  font-size: 62.5%;
+  font-family: sans-serif;
+  @media only screen and (max-width: 43.75em){
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  color: var(--color-grey);
+}

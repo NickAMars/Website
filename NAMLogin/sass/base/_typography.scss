@@ -1,0 +1,58 @@
+.header{
+  &__text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+.heading{
+  &-primary{
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 4rem;
+    /*
+      takes out the chake
+    */
+     backface-visibility: hidden;
+
+
+    &--main{
+      display: block;
+      font-size: 5rem;
+      font-weight: 400;
+      letter-spacing: 3.5rem;
+      animation: moveInLeft 3s ease-out;
+    }
+    &--sub{
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 1.3rem;
+      animation: moveInRight 3s ease-out;
+    }
+  }
+  &-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding:3rem;
+    //only occupy text width
+    display:inline-block;
+    background-image: linear-gradient(to right, var(--color-secondary-light), var(--color-secondary-light));
+    //takes away the color form everything except behind the text
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    letter-spacing: 2px;
+    transition: transform .2s;
+
+    &:hover{
+      transform: skewY( -2deg ) skewX( 10deg ) scale(1.1);
+      text-shadow: .5rem 1rem 2rem rgba(var(--color-black), 0.2);
+    }
+  }
+}

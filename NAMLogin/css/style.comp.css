@@ -1,0 +1,189 @@
+@keyframes moveInLeft {
+  0% {
+    /* you cant see it at the start */
+    opacity: 0;
+    /* going from left to right */
+    transform: translateX(-10rem); }
+  75% {
+    /* going from  right to left a little */
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+/* repeating the moveInLeft but opposite */
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  75% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+:root {
+  --color-primary: #7a5230;
+  --color-primary-light:  #aa7243;
+  --color-primary-dark:  #49311c;
+  --color-secondary:#ffc04c;
+  --color-secondary-light:#ffb732 ;
+  --color-secondary-dark:#ffa500;
+  --color-tertiary: 	#008000;
+  --color-tertiary-light: #228B22;
+  --color-tertiary-dark: #006400;
+  --color-white: #fff;
+  --color-grey: #777;
+  --color-black: #000;
+  --shadow-background: rgba(#000, 0.23); }
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  /*set font to 10px  also  did global reset*/
+  font-size: 62.5%;
+  font-family: sans-serif; }
+  @media only screen and (max-width: 43.75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box;
+  color: var(--color-grey); }
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 4rem;
+  /*
+    takes out the chake
+  */
+  backface-visibility: hidden; }
+  .heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation: moveInLeft 3s ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1.3rem;
+    animation: moveInRight 3s ease-out; }
+
+.form__login {
+  display: flex; }
+  @media only screen and (max-width: 47em) {
+    .form__login {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; } }
+
+.form__group {
+  padding: .5rem; }
+  .form__group:not(:last-of-type) {
+    margin-right: 1rem; }
+  @media only screen and (max-width: 47em) {
+    .form__group {
+      margin: 0; } }
+
+.form__input {
+  font-family: inherit;
+  font-size: 1.4rem;
+  color: inherit;
+  padding: .7rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  /*
+      adding modifier
+    */ }
+  .form__input--1 {
+    border-radius: 10px;
+    border: 0.5rem solid var(--color-secondary); }
+    .form__input--1:focus {
+      border: 0.5rem solid var(--color-primary); }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
+  .form__input::-webkit-input-placeholder {
+    color: var(--color-grey); }
+
+.btn {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  border-radius: .8rem;
+  border: none;
+  cursor: pointer;
+  letter-spacing: .4rem; }
+  @media only screen and (max-width: 22em) {
+    .btn {
+      display: block;
+      width: 60%; } }
+  .btn--orange {
+    background-image: linear-gradient(to right, rgba(255, 183, 50, 0.8), rgba(255, 165, 0, 0.8)); }
+  .btn--orange:hover {
+    background-image: linear-gradient(to left, rgba(255, 183, 50, 0.8), rgba(255, 165, 0, 0.8)); }
+  .btn-register:link, .btn-register:visited {
+    display: inline-block;
+    font-size: 2rem;
+    color: orange;
+    text-decoration: none;
+    margin: 0 2rem;
+    border-bottom: .5rem solid transparent;
+    transform-origin: center;
+    transition: all .3s;
+    position: relative; }
+  .btn-register::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-bottom: 0.5rem solid var(--color-secondary-light);
+    transform-origin: center;
+    border-radius: 2rem;
+    transform: scaleX(0);
+    transition: transform .2s; }
+  .btn-register:hover::before {
+    transform: scaleX(1); }
+
+.landing {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(170, 114, 67, 0.6), rgba(73, 49, 28, 0.6)), url(../img/glasses.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  line-height: 1.7;
+  padding: 2.5rem; }
+
+.container {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  position: relative;
+  z-index: 100; }
+  @media only screen and (max-width: 47em) {
+    .container {
+      flex-wrap: wrap;
+      justify-content: center; } }
+
+.logo {
+  padding: 2rem;
+  font-size: 2.5rem;
+  margin-right: auto; }
+  @media only screen and (max-width: 47em) {
+    .logo {
+      margin: 0; } }

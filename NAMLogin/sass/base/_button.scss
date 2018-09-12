@@ -1,0 +1,49 @@
+.btn {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    border-radius: .8rem;
+    border:none;
+    cursor: pointer;
+    letter-spacing: .4rem;
+    @media only screen and (max-width: 22em){
+      display: block;
+      width:60%;
+    }
+
+  &--orange{
+    background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark);
+  }
+  &--orange:hover{
+    background-image: linear-gradient(to left, $color-secondary-light, $color-secondary-dark);
+  }
+
+  &-register:link,
+  &-register:visited{
+    display: inline-block;
+    font-size: 2rem;
+    color: orange;
+    text-decoration: none;
+    margin: 0 2rem;
+    border-bottom: .5rem solid transparent;
+    transform-origin: center;
+    transition: all .3s;
+    position: relative;
+  }
+  &-register::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-bottom: .5rem solid var(--color-secondary-light);
+    transform-origin: center;
+    border-radius: 2rem;
+    transform:scaleX(0);
+    transition: transform .2s;
+  }
+  &-register:hover::before{
+       transform:scaleX(1);
+  }
+}

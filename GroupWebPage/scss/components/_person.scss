@@ -1,0 +1,69 @@
+.person{
+  height: 50rem;
+  background-color: #eee;
+  color: #777;
+  position:relative;
+  &__picture-box{
+    height: 23rem;
+  }
+  &__picture{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    display: block;
+  }
+  &__heading{
+    font-size: 2.8rem;
+    position: absolute;
+    top: 15rem;
+    left: 12rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: right;
+     width: 75%;
+     padding-right: 4rem;
+/*
+  when 1200px
+  margin-right -2rem;
+  when 900px
+  flex-direction: column
+
+*/
+  }
+  &__heading-span{
+    padding: 1rem 1.5rem;
+   -webkit-box-decoration-break: clone;
+   box-decoration-break: clone;
+   &--1{
+     background-image: linear-gradient(to left bottom,
+      rgba(#492, .5),
+       rgba(#924, .7));
+   }
+  }
+
+  &__details{
+    width: 80%;
+    padding: 1rem;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    ul{
+      list-style: none;
+      line-height: .4rem;
+    }
+  }
+
+  &__item{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    strong{
+      // font-weight: 900;
+      letter-spacing: .5rem;
+      border-bottom: 1px solid #999;
+    }
+    // &:nth-child(1),&:nth-child(3) {
+    //   border-bottom: 1px solid #777;
+    // }
+  }
+}

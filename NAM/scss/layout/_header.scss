@@ -1,0 +1,15 @@
+.header{
+  height: 30vh;
+  width: 100%;
+  background-color: rgba($color-primary, 0.2);
+  position: relative;
+  font-family: $font-lobster;
+}
+.header-box{
+    width: 50rem;
+    height: 20rem;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

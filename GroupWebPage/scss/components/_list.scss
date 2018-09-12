@@ -1,0 +1,15 @@
+.list{
+  list-style: none;
+  display:flex;
+  padding: 3rem 2rem;
+  &__item{
+  flex:0 1 33.3333%;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 5px;
+  overflow: hidden;
+    &:not(:last-child){
+      margin-right: 2rem;
+    }
+  }
+}

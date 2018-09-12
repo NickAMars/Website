@@ -1,0 +1,51 @@
+.landing{
+  height: 100vh;
+ background-image: linear-gradient(
+    to right bottom,
+    $color-light,
+    $color-dark),
+    url(../img/glasses.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+    line-height: 1.7;
+    padding: 2.5rem;
+
+}
+
+.container{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    //margin-top: -2rem;
+    position: relative;
+    z-index: 100;
+
+    @media only screen and (max-width: 47em){
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: center;
+    }
+}
+
+.logo{
+  padding: 2rem;
+  font-size: 2.5rem;
+  margin-right: auto;
+  @media only screen and (max-width: 47em){
+  margin: 0;
+  }
+}
+
+.register{
+
+  height: 100vh;
+  background-image: linear-gradient(
+     to right bottom,
+     $color-light,
+     $color-dark),
+     url(../img/fallentime.jpg);
+   background-position: top;
+   background-size: cover;
+}

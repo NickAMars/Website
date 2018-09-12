@@ -1,0 +1,28 @@
+.heading-primary{
+  color: #fff;
+  font-size: 6rem;
+  letter-spacing: 1.2rem;
+  font-weight: 400;
+}
+
+.heading-secondary{
+  color: orangered;
+  font-size: 4rem;
+  letter-spacing: .7rem;
+  font-weight: 400;
+  text-align: center;
+}
+.app{
+  @media only screen and (max-width: 900px){
+    margin-top: 4rem;
+  }
+  @media only screen and (max-width: 600px){
+   display:none;
+  }
+  flex:0 1 70%;
+  // background-color: purple;
+  padding: 3rem;
+  &__description{
+    font-size: 1.4rem;
+  }
+}

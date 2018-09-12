@@ -1,0 +1,35 @@
+
+
+.btn{
+
+  &:link, &:visited{
+    color: #fff;
+    background-color: orangered;
+    padding: 1rem 1.5rem;
+    border-radius: .2rem;
+    text-decoration: none;
+  }
+
+  // dont want all my buttons to be place like this
+  &--1{
+    position:absolute;
+    bottom: 10px ;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 0 2rem 4rem rgba(#000, .2);
+    transition: all .8s;
+
+    span{
+      transition: margin .8s;
+    }
+  }
+  &--1:hover{
+    transform: translate(-50%, -5px);
+    box-shadow: 0 3rem 5rem rgba(#000, .2);
+  }
+    &--1:hover span{
+      // transform: translateX(50%);
+      margin-left: 1rem;
+    }
+
+}
