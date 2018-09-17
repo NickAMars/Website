@@ -72,18 +72,18 @@ html {
 .u-margin-top-xlarge {
   margin-top: 10rem  !important; }
 
-.form {
+.formA {
   flex: 0 1 30%;
   margin-left: auto;
   padding: 2rem;
   text-align: center; }
   @media only screen and (max-width: 600px) {
-    .form {
+    .formA {
       margin-top: 4rem;
       flex: 0 1 100%; } }
-  .form__group:not(:last-child) {
+  .formA__group:not(:last-child) {
     margin-bottom: 2rem; }
-  .form__input {
+  .formA__input {
     border: none;
     border-radius: 2rem;
     font-size: 1.4;
@@ -95,12 +95,12 @@ html {
     width: 100%;
     border-bottom: 3px solid transparent;
     display: block; }
-    .form__input:focus {
+    .formA__input:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
       border-bottom: 3px solid green; }
 
-.btn, .btn:link, .btn:visited {
+.btnA, .btnA:link, .btnA:visited {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1.4rem;
@@ -113,29 +113,29 @@ html {
   border: none;
   cursor: pointer; }
 
-.btn:hover {
+.btnA:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
-  .btn:hover::after {
+  .btnA:hover::after {
     transform: scaleX(1.4) scaleY(1.5);
     opacity: 0; }
 
-.btn:active, .btn:focus {
+.btnA:active, .btnA:focus {
   outline: none;
   transform: translateY(-0.1rem);
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3); }
 
-.btn--green {
+.btnA--green {
   background-color: rgba(0, 128, 0, 0.8);
   color: #fff;
   /* the color of the after psuedo elem for the button */ }
 
-.btn__svg {
+.btnA__svg {
   width: 100%;
   height: 100%; }
-  .btn__svg:not(:last-child) {
+  .btnA__svg:not(:last-child) {
     margin-right: 2rem; }
-  .btn__svg svg {
+  .btnA__svg svg {
     width: 4rem;
     height: 4rem;
     fill: purple; }
