@@ -5,10 +5,6 @@
      flex-wrap: wrap;
      align-items: center;
      justify-content: center;
-     // height: 11rem;
-     // position: relative;
-     // z-index: 100;
-
     }
   }
   &__group{
@@ -56,7 +52,7 @@
     &-box{
       position: absolute;
       top: 40%;
-      left: 60%;
+      left: 70%;
       transform: translate(0%, -50%);
       text-align: center;
       border-radius: 4px;
@@ -64,20 +60,22 @@
       padding: 2rem;
     //  backgound-color: orange;
     }
-    &-white{
-      background-color: var(--color-grey-light);
-      // width: 40px;
-    }
+    // &-transparent{
+    //   background-color:transform;
+    // }
     &-group:not(:last-child){
       margin-bottom: 2rem;
     }
     &-input{
+      // outline: 5px solid white;
     font-size: 1.4;
     font-family: inherit;
     color: inherit;
     padding: 1.5rem 2rem;
-    border-radius: 2px;
-    background-color: var(--color-white);
+    border-radius: 10px;
+    // background-color: var(--color-white);
+    background-color: rgba(#8B4000, .7); // rust
+    border: none;
     border-bottom: 3px solid transparent;
     width: 100%;
     display:block;

@@ -148,15 +148,12 @@ body {
 .form__register-box {
   position: absolute;
   top: 40%;
-  left: 60%;
+  left: 70%;
   transform: translate(0%, -50%);
   text-align: center;
   border-radius: 4px;
   width: 300px;
   padding: 2rem; }
-
-.form__register-white {
-  background-color: var(--color-grey-light); }
 
 .form__register-group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -166,8 +163,9 @@ body {
   font-family: inherit;
   color: inherit;
   padding: 1.5rem 2rem;
-  border-radius: 2px;
-  background-color: var(--color-white);
+  border-radius: 10px;
+  background-color: rgba(139, 64, 0, 0.7);
+  border: none;
   border-bottom: 3px solid transparent;
   width: 100%;
   display: block;
@@ -234,6 +232,10 @@ body {
     transition: transform .2s; }
   .btn-register:hover::before {
     transform: scaleX(1); }
+
+.link__login:link, .link__login:visited {
+  text-decoration: none;
+  color: orange; }
 
 .landing {
   height: 100vh;
