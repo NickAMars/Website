@@ -1,3 +1,10 @@
 @import "base/base";
 @import "base/typography.scss";
 @import "base/utilities.scss";
+
+@import "components/container";
+@import "components/topcards";
+@import "components/table";
+@import "components/create";
+
+@import "page/main-page";
