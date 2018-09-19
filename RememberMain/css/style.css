@@ -29,29 +29,189 @@ html {
   font-weight: 400;
   text-align: center; }
 
-.u-center-text {
+.header__quaternary {
+  color: #777;
+  font-size: 2em;
+  letter-spacing: .2em;
+  font-weight: 900;
   text-align: center; }
 
-.u-margin-bottom-small {
-  margin-bottom: 1.5rem !important; }
+.u-ct {
+  text-align: center; }
 
-.u-margin-bottom-medium {
-  margin-bottom: 4rem  !important; }
+.u-br-bt {
+  border-bottom: 1px solid #eee; }
 
-.u-margin-bottom-large {
-  margin-bottom: 8rem  !important; }
-
-.u-margin-bottom-xlarge {
-  margin-bottom: 10rem  !important; }
-
-.u-margin-top-small {
+.u-mt-sm {
   margin-top: 1.5rem  !important; }
 
-.u-margin-top-medium {
+.u-mt-md {
   margin-top: 4rem  !important; }
 
-.u-margin-top-large {
+.u-mt-lg {
   margin-top: 8rem  !important; }
 
-.u-margin-top-xlarge {
+.u-mt-xlg {
   margin-top: 10rem  !important; }
+
+.u-mb-sm {
+  margin-bottom: 1.5rem  !important; }
+
+.u-mb-md {
+  margin-bottom: 4rem  !important; }
+
+.u-mb-lg {
+  margin-bottom: 8rem  !important; }
+
+.u-mb-xlg {
+  margin-bottom: 10rem  !important; }
+
+.u-ml-sm {
+  margin-left: 1.5rem  !important; }
+
+.u-ml-md {
+  margin-left: 4rem  !important; }
+
+.u-ml-lg {
+  margin-left: 8rem  !important; }
+
+.u-ml-xlg {
+  margin-left: 10rem  !important; }
+
+.u-mr-sm {
+  margin-right: 1.5rem  !important; }
+
+.u-mr-md {
+  margin-right: 4rem  !important; }
+
+.u-mr-lg {
+  margin-right: 8rem  !important; }
+
+.u-mr-xlg {
+  margin-right: 10rem  !important; }
+
+.xcontainer-main {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400; }
+
+.topcards {
+  background-color: #eee;
+  border-radius: .5em;
+  padding: 2em 4em;
+  flex: 0 0 40%;
+  text-align: center; }
+
+.topcards__graph {
+  flex: 0 0 55%;
+  background-color: #fff;
+  padding: 2rem; }
+
+.list {
+  list-style: none; }
+
+.list__items {
+  display: flex; }
+  .list__items:not(:last-child) {
+    margin-bottom: .714rem; }
+
+.list__links:link, .list__links:visited {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  border-radius: 1em;
+  flex: 1;
+  padding: 2em 4em;
+  background-color: pink;
+  cursor: pointer; }
+
+.list__title {
+  font-size: 1.6rem;
+  align-self: center;
+  text-transform: uppercase; }
+
+.list__date {
+  font-size: 1.1rem;
+  align-self: flex-end; }
+
+.table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 2rem auto;
+  border: 1px solid #ddd; }
+  .table__hr {
+    background-color: orange; }
+  .table__th {
+    padding: 1.5rem; }
+  .table__hr--sub {
+    border: 1px solid #ddd;
+    padding: 1.5rem; }
+  .table__tr {
+    text-align: center; }
+  .table__tc--1, .table__tc--2, .table__tc--3 {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    position: relative; }
+  .table__tc--1:nth-of-type(even), .table__tc--3:nth-of-type(even) {
+    background-color: #aaa; }
+  .table__tc--2:nth-of-type(odd) {
+    background-color: #aaa; }
+  .table__text-style {
+    writing-mode: vertical-rl;
+    text-orientation: mixed; }
+
+.create__master {
+  display: flex;
+  justify-content: flex-end; }
+
+.create__field {
+  position: relative; }
+
+.input__master {
+  background-color: transparent;
+  border: none; }
+
+.input__master:focus {
+  outline: none; }
+
+.input__circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: -3rem;
+  background-color: orangered;
+  padding: .7rem 1.25rem;
+  border-radius: 50%; }
+
+.main-page {
+  padding: 2rem;
+  background-color: rgba(0, 0, 255, 0.2); }
+
+.Xnav {
+  margin-bottom: 2rem; }
+  .Xnav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+    .Xnav-list__item {
+      text-align: center;
+      position: relative;
+      display: flex;
+      width: 100%; }
+      .Xnav-list__item:not(:last-child) {
+        margin-right: .2em; }
+    .Xnav-list__link:visited, .Xnav-list__link:link {
+      padding: .5em 1em;
+      border-radius: 5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: black;
+      color: #fff;
+      position: relative;
+      cursor: pointer;
+      background-color: orangered;
+      font-size: 2rem;
+      width: 100%;
+      transition: all .2s; }
+    .Xnav-list__link:active {
+      background-color: pink; }
