@@ -1,0 +1,47 @@
+.topcards{
+  background-color: #eee;
+  border-radius: .5em;
+  padding: 2em 4em;
+  flex: 0 0 40%;
+  text-align: center;
+}
+.topcards__graph{
+    flex: 0 0 55%;
+    background-color: #fff;
+    padding:2rem;
+    // margin-left:1rem;
+}
+
+
+
+
+
+
+.list{
+  list-style: none;
+}
+.list__items{
+  display:flex;
+  &:not(:last-child){
+    margin-bottom: .714rem;
+  }
+}
+.list__links:link,.list__links:visited{
+  display:flex;
+  flex-direction: column;
+ text-decoration: none;
+ border-radius: 1em;
+ flex:1;
+ padding: 2em 4em;
+ background-color: pink;
+ cursor: pointer;
+}
+.list__title{
+ font-size:1.6rem;
+ align-self: center;
+ text-transform: uppercase;
+}
+.list__date{
+ font-size:1.1rem;
+ align-self: flex-end;
+}

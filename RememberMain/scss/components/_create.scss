@@ -1,0 +1,40 @@
+.create__master{
+  display:flex;
+  justify-content: flex-end;
+}
+.create__field{
+position: relative;
+}
+
+.input__master{
+  background-color: transparent;
+  border:none;
+}
+.input__master:focus{
+  outline: none;
+}
+.input__circle{
+  // border: 5px solid orangered;
+  position:absolute;
+  left:0;
+  top:0;
+  margin-left: -3rem;
+  background-color: orangered;
+  padding: .7rem 1.25rem;
+  border-radius: 50%;
+  // position:relative;
+}
+// .input__circle::before{
+//   content: "";
+//   position:absolute;
+//   background-color: orangered;
+//   top:50%;
+//   left:50%;
+//   transform: translate(-50%,-50%);
+//   padding: 1.1rem 1.25rem;
+//   border-radius: 50%;
+//
+// }
+// .input__circle:active:before{
+//   display:none;
+// }
