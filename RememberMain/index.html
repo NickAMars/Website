@@ -12,25 +12,139 @@
 </head>
 <body>
     <div class="main-page">
-      <div class="xcontainer-main">
+
+      <nav class="Xnav">
+        <ul class="Xnav-list">
+          <li class="Xnav-list__item"><a class="Xnav-list__link" href="">Profile</a></li>
+          <li class="Xnav-list__item"><a class="Xnav-list__link" href="">Master</a></li>
+          <li class="Xnav-list__item"><a class="Xnav-list__link" href="">Group</a></li>
+        </ul>
+      </nav>
+      <div class="xcontainer-main u-mb-sm">
         <div class="topcards">
+          <h4 class="header__quaternary u-mb-sm">Top Five Cards </h4>
           <ul class="list">
-            <li class="list__items"><a href="" class="list__links">1 TOP CARD</a></li>
-            <li class="list__items"><a href="" class="list__links">2 TOP CARD</a></li>
-            <li class="list__items"><a href="" class="list__links">3 TOP CARD</a></li>
-            <li class="list__items"><a href="" class="list__links">4 TOP CARD</a></li>
-            <li class="list__items"><a href="" class="list__links">5 TOP CARD</a></li>
+            <li class="list__items">
+              <a href="" class="list__links">
+                <span class="list__title">Master Card</span>
+                <span class="list__date">time created</span>
+              </a>
+            </li>
+            <li class="list__items">
+              <a href="" class="list__links">
+                <span class="list__title">Master Card</span>
+                <span class="list__date">time created</span>
+              </a>
+            </li>
+            <li class="list__items">
+              <a href="" class="list__links">
+                <span class="list__title">Master Card</span>
+                <span class="list__date">time created</span>
+              </a>
+            </li>
+            <li class="list__items">
+              <a href="" class="list__links">
+                <span class="list__title">Master Card</span>
+                <span class="list__date">time created</span>
+              </a>
+            </li>
+            <li class="list__items">
+              <a href="" class="list__links">
+                <span class="list__title">Master Card</span>
+                <span class="list__date">time created</span>
+              </a>
+            </li>
           </ul>
         </div>
+
+        <!-- substitute this for a table right now  -->
         <div class="topcards__graph">
-          SHOW GRAPH OF TOP 5 SLIDER FOR EACH ONE ON THE WEEK
+          <table  class="table">
+              <thead>
+                    <tr class="table__hr">
+                        <th class="table__th" colspan="6">D3 GRAPH</th>
+                    </tr>
+              </thead>
+              <tr class= "table__tr">
+                <th class="table__hr--sub">&nbsp;</th>
+                <th class="table__hr--sub">CARD 1</th>
+                <th class="table__hr--sub">CARD 2</th>
+                <th class="table__hr--sub">CARD 3</th>
+                <th class="table__hr--sub">CARD 4</th>
+                <th class="table__hr--sub">CARD 5</th>
+              </tr>
+              <tr class= "table__tr">
+                <td class="table__tc--1">Monday</td>
+                <td class="table__tc--1">10</td>
+                <td class="table__tc--1">20</td>
+                <td class="table__tc--1">40</td>
+                <td class="table__tc--1">40</td>
+                <td class="table__tc--1">40</td>
+
+              </tr>
+              <tr class= "table__tr">
+                <td class="table__tc--1">Tuesday</td>
+                <td class="table__tc--1">10</td>
+                <td class="table__tc--1">20</td>
+                <td class="table__tc--1">40</td>
+                <td class="table__tc--1">40</td>
+                <td class="table__tc--1">40</td>
+
+              </tr>
+              <tr class= "table__tr">
+                <td class="table__tc--1">Wednesday</td>
+                <td class="table__tc--1">10</td>
+                <td class="table__tc--1">20</td>
+                <td class="table__tc--1">40</td>
+                <td class="table__tc--1">40</td>
+                <td class="table__tc--1">40</td>
+
+              </tr>
+              <tr class= "table__tr">
+                <td class="table__tc--1">Thursday</td>
+                <td class="table__tc--1">10</td>
+                <td class="table__tc--1">20</td>
+                <td class="table__tc--1">40</td>
+                <td class="table__tc--1">40</td>
+                <td class="table__tc--1">40</td>
+              </tr>
+              <tr class= "table__tr">
+                <td class="table__tc--1">Friday</td>
+                <td class="table__tc--1">10</td>
+                <td class="table__tc--1">20</td>
+                <td class="table__tc--1">40</td>
+                <td class="table__tc--1">40</td>
+                <td class="table__tc--1">40</td>
+
+              </tr>
+              <tr class= "table__tr">
+                <td class="table__tc--1">Saturday</td>
+                <td class="table__tc--1">10</td>
+                <td class="table__tc--1">20</td>
+                <td class="table__tc--1">40</td>
+                <td class="table__tc--1">40</td>
+                <td class="table__tc--1">40</td>
+              </tr>
+              <tr class= "table__tr">
+                <td class="table__tc--1">Sunday</td>
+                <td class="table__tc--1">10</td>
+                <td class="table__tc--1">20</td>
+                <td class="table__tc--1">40</td>
+                <td class="table__tc--1">40</td>
+                <td class="table__tc--1">40</td>
+              </tr>
+          </table>
+
         </div>
       </div>
-      <div class="create">
-        <div class="create__maincard">
-            Creation for main card.
-            An invisible input element which can only be targetted by the selecting a label
-            Also, upload file section and a create button.
+
+      <div class="create__master">
+
+        <div class="create__field">
+          <input type="text" value="Title" id="title" class="input__master">
+           <label for="title" class="input__circle">
+             &nbsp;
+           </label>
         </div>
       </div>
 
