@@ -20,7 +20,7 @@
           <li class="Xnav-list__item"><a class="Xnav-list__link" href="">Group</a></li>
         </ul>
       </nav>
-      <div class="xcontainer-main u-mb-sm">
+      <div class="xcontainer-main u-mb-md">
         <div class="topcards">
           <h4 class="header__quaternary u-mb-sm">Top Five Cards </h4>
           <ul class="list">
@@ -138,16 +138,41 @@
         </div>
       </div>
 
-      <div class="create__master">
+      <div class="create">
+        <h4 class="header__quaternary u-mb-md">Create Main Cards</h4>
 
-        <div class="create__field">
-          <input type="text" value="Title" id="title" class="input__master">
-           <label for="title" class="input__circle">
-             &nbsp;
-           </label>
+        <!-- check box to show the create master card section -->
+
+        <input type="checkbox" id="create" class="checkbox"/>
+        <label for="create" class="checkbox__label">
+          <span class="checkbox__btn">&nbsp;</span>
+        </label>
+
+
+        <div class="create__contrainer ">
+          <div class="create__cards  u-mb-sm">
+
+            <div class="create__field">
+              <input type="text" value="Title" id="title" class="input__master-title">
+              <!-- <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" /> -->
+            </div>
+            <div class="create__view">
+              <!-- show how the card is going to look base on the user update -->
+              <div class="card__view">
+                <div class="card__view-title">View Card Create</div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="create__cta u-mb-sm">
+            <button class="create__cta-btn "> Create Master Card </button>
+          </div>
+
+
         </div>
       </div>
-
     </div>
 </body>
 </html>
