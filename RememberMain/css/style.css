@@ -16,13 +16,14 @@ html {
     html {
       font-size: 40%; } }
 
-.heading-primary {
-  color: #fff;
+.heading__primary {
+  color: pink;
   font-size: 6rem;
   letter-spacing: 1.2rem;
-  font-weight: 400; }
+  font-weight: 400;
+  text-align: center; }
 
-.heading-secondary {
+.heading__secondary {
   color: orangered;
   font-size: 4rem;
   letter-spacing: .7rem;
