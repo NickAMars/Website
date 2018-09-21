@@ -1,0 +1,42 @@
+.profile{
+  margin: 0 2rem;
+  background-color: rgba(blue, .2);
+  height: 100vh;
+}
+
+.Xnav{
+  margin-bottom:2rem;
+  &-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    &__item{
+      &:not(:last-child){
+      margin-right: .2em;
+      }
+      text-align: center;
+      position:relative;
+      display:flex;
+      width: 100%;
+    }
+
+    &__link:visited,&__link:link {
+      padding: .5em 1em;
+      border-radius: 5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display:black;
+      color: #fff;
+      position:relative;
+      // z-index: 5;
+      cursor: pointer;
+      background-color: orangered;
+      font-size: 2rem;
+      width:100%;
+      transition: all .2s;
+    }
+    &__link:active{
+      background-color: pink;
+    }
+  }
+}

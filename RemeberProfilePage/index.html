@@ -1,0 +1,77 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Profile page</title>
+</head>
+<body>
+    <div class="profile">
+      <div class="heading__primary" onClick="getLocal()"> Remember </div>
+      <nav class="Xnav">
+        <ul class="Xnav-list">
+          <li class="Xnav-list__item"><a class="Xnav-list__link" href="">Profile</a></li>
+          <li class="Xnav-list__item"><a class="Xnav-list__link" href="">Master</a></li>
+          <li class="Xnav-list__item"><a class="Xnav-list__link" href="">Group</a></li>
+        </ul>
+      </nav>
+      <!-- flex , flex-direction -->
+      <div class="profile__content">
+
+        <div class="profile__image-box">
+          <img class="profile__image" src="./img/Steampunk.jpg" alt="Steampunk">
+        </div>
+        <!-- flex -->
+        <div class="profile__fields">
+            <div class="profile__fields-group">
+              <input class="profile__fields-input" type="text" id="name" value="name"/>
+            </div>
+            <div class="profile__fields-group">
+              <input class="profile__fields-input" type="email" id="email" value="email"/>
+            </div>
+            <div class="profile__fields-group">
+              <input onchange="handleFiles(this.files)" class="prifile__fields-upload" type="file" accept=" image/jpeg image/png image/png"/>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <script>
+    //something New that i didnt know
+    function handleFiles(files){
+        let Myfile = {
+          name: files[0].name,
+          size: files[0].size,
+          lastmod: files[0].lastModifiedDate,
+          type: files[0].type
+
+        }
+        // store even when screen has refreshed
+        localStorage.setItem("Files ",JSON.stringify(Myfile));
+        console.log(localStorage);
+    }
+    function getLocal(){
+      console.log(localStorage);
+    }
+    </script>
+</body>
+</html>
+
+<!--
+state= {
+  selectedFile: null;
+}
+
+// store file input into state
+fileSelectedHandler = event => {
+  selectedFile: event.target.files[0];
+}
+<input type="file" onChange={this.fileSelectedHandler}/>
+<button onClick={this.fileUploadHandler}></button>
+-->
+<!-- <input type="file" accept=" image/jpeg image/png image/png" onChange={ (e) => this.handleChange(e.target.files) }  /> -->
