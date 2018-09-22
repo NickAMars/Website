@@ -16,6 +16,25 @@
     letter-spacing: 1.4rem;
   }
 }
+
+.heading__secondary{
+  color: orangered;
+  font-size: 4rem;
+  letter-spacing: .7rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.header__quaternary{
+  color: #A55D35;
+  font-size: 2em;
+  letter-spacing: .2em;
+  font-weight: 900;
+  text-align: center;
+  // font-family: $font-Rubik;
+  // font-style: italic;
+}
+
 .svg__heading{
 // border:2px  solid black;
 width: 100%;
