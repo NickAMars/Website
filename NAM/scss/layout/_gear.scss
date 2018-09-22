@@ -1,11 +1,16 @@
 .gear{
-  background-color: blue;
+  display: flex;
+  justify-content: space-between;
   &__box{
-    width: 100%;
+    width: 100px;
     height: 200px;
   }
-  &__image{
-    width: 100%;
+  &__image--1{
+    width: 100px;
+    height: 200px;
+  }
+  &__image--2{
+    width: 100px;
     height: 200px;
   }
 }
