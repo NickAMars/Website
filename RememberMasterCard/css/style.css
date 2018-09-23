@@ -1,0 +1,126 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 1200px) {
+    html {
+      font-size: 62.5%; } }
+  @media only screen and (max-width: 900px) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 600px) {
+    html {
+      font-size: 40%; } }
+
+.heading__primary {
+  color: pink;
+  font-size: 6rem;
+  letter-spacing: 1.2rem;
+  font-weight: 400;
+  text-align: center; }
+
+.heading__secondary {
+  color: orangered;
+  font-size: 4rem;
+  letter-spacing: .7rem;
+  font-weight: 400;
+  text-align: center; }
+
+.header__quaternary {
+  color: #777;
+  font-size: 2em;
+  letter-spacing: .2em;
+  font-weight: 900;
+  text-align: center; }
+
+.u-ct {
+  text-align: center; }
+
+.u-br-bt {
+  border-bottom: 1px solid #eee; }
+
+.u-mt-sm {
+  margin-top: 1.5rem  !important; }
+
+.u-mt-md {
+  margin-top: 4rem  !important; }
+
+.u-mt-lg {
+  margin-top: 8rem  !important; }
+
+.u-mt-xlg {
+  margin-top: 10rem  !important; }
+
+.u-mb-sm {
+  margin-bottom: 1.5rem  !important; }
+
+.u-mb-md {
+  margin-bottom: 4rem  !important; }
+
+.u-mb-lg {
+  margin-bottom: 8rem  !important; }
+
+.u-mb-xlg {
+  margin-bottom: 10rem  !important; }
+
+.u-ml-sm {
+  margin-left: 1.5rem  !important; }
+
+.u-ml-md {
+  margin-left: 4rem  !important; }
+
+.u-ml-lg {
+  margin-left: 8rem  !important; }
+
+.u-ml-xlg {
+  margin-left: 10rem  !important; }
+
+.u-mr-sm {
+  margin-right: 1.5rem  !important; }
+
+.u-mr-md {
+  margin-right: 4rem  !important; }
+
+.u-mr-lg {
+  margin-right: 8rem  !important; }
+
+.u-mr-xlg {
+  margin-right: 10rem  !important; }
+
+.mastercard {
+  margin: 0 2rem;
+  background-color: rgba(0, 0, 255, 0.2);
+  height: 100vh; }
+
+.Xnav {
+  margin-bottom: 2rem; }
+  .Xnav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+    .Xnav-list__item {
+      text-align: center;
+      position: relative;
+      display: flex;
+      width: 100%; }
+      .Xnav-list__item:not(:last-child) {
+        margin-right: .2em; }
+    .Xnav-list__link:visited, .Xnav-list__link:link {
+      padding: .5em 1em;
+      border-radius: 5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: black;
+      color: #fff;
+      position: relative;
+      cursor: pointer;
+      background-color: orangered;
+      font-size: 2rem;
+      width: 100%;
+      transition: all .2s; }
+    .Xnav-list__link:active {
+      background-color: pink; }
