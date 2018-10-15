@@ -1,0 +1,31 @@
+.filter__list{
+  position: absolute;
+  top: 60%;
+  display: none;
+  background-color: #ccc;
+  list-style: none;
+  margin-top:1rem;
+  max-height: 200px;
+  width: 100px;
+  &-item{
+    margin-bottom: 1rem;
+    display: flex;
+
+  }
+  &-link:link, &-link:visited{
+    text-decoration: none;
+    padding: 1rem 2rem;
+    flex:1;
+    background-color: pink;
+    transition: all 2s;
+  }
+  &-link:not(:hover){
+    transform: translateX(-10px);
+  }
+}
+.search__filter:hover  .filter__list{
+  display:block;
+}
+// .search__btn:focus + .filter__list{
+//   display:block;
+// }
