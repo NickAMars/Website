@@ -100,41 +100,30 @@ html {
   font-size: 1.4rem;
   border-bottom: 1px solid #eee; }
 
-.search__icon {
-  height: 2.5rem;
-  width: 2.5rem;
-  fill: #ddd; }
-
-.search__icon-btn {
-  transform: translateX(-3.5rem);
-  background-color: #eee;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer; }
-  .search__icon-btn:focus {
-    outline: none; }
-  .search__icon-btn:active {
-    transform: translateY(2px); }
-
 .search__name {
-  flex: 0 1 400px;
-  margin-right: 1rem;
+  flex: 0 0 400px;
   display: flex;
+  margin-right: 5px;
+  position: relative;
   justify-content: center; }
   .search__name--input {
-    padding: .96rem 1.5rem;
-    width: 75%;
+    padding: .96em 1.5em;
+    width: 80%;
     border-radius: 50px;
     border: none;
-    transition: all .2s;
     font-size: inherit;
     color: #aaa;
     background-color: #eee;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    transform: scaleX(1);
+    transition: all 2s; }
     .search__name--input:hover {
-      width: 100%; }
+      transform: scaleX(1.1); }
     .search__name--input:focus {
       outline: none; }
+
+.search__name--input:hover + .search__icon-btn {
+  transform: translate(-50%, -50%); }
 
 .search__name--input:focus + .search__icon-btn .search__icon {
   fill: #ccc; }
@@ -142,12 +131,38 @@ html {
 .search__name--input:hover + .search__icon-btn .search__icon {
   fill: #ccc; }
 
+.search__icon-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-80%, -50%);
+  background-color: #eee;
+  border: none;
+  width: 50px;
+  height: 90%;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 2s; }
+  .search__icon-btn:focus {
+    outline: none; }
+
+.search__icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: #ddd;
+  transition: 2s fill; }
+
+.search__icon:active {
+  fill: #000; }
+
 .search__filter {
-  width: 100px; }
+  width: 100px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative; }
 
 .search__btn {
-  width: 100%;
-  height: 80%;
+  flex: 0 0 100%;
   background-color: #eee;
   border-radius: 3px;
   border: none;
@@ -170,6 +185,30 @@ html {
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 8px solid #777; }
+
+.filter__list {
+  position: absolute;
+  top: 60%;
+  display: none;
+  background-color: #ccc;
+  list-style: none;
+  margin-top: 1rem;
+  max-height: 200px;
+  width: 100px; }
+  .filter__list-item {
+    margin-bottom: 1rem;
+    display: flex; }
+  .filter__list-link:link, .filter__list-link:visited {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    flex: 1;
+    background-color: pink;
+    transition: all 2s; }
+  .filter__list-link:not(:hover) {
+    transform: translateX(-10px); }
+
+.search__filter:hover .filter__list {
+  display: block; }
 
 .mastercard {
   margin: 0 2rem;
