@@ -24,7 +24,7 @@
       <div class="search">
         <div class="search__name">
           <!-- this is to search throw the available master cards -->
-          <input class="search__name--input" type="text"/>
+          <input class="search__name--input" maxlength="32" type="text"/>
           <button class="search__icon-btn">
             <svg class="search__icon">
                    <use xlink:href="img/sprite.svg#icon-search"></use>
@@ -32,8 +32,14 @@
           </button>
         </div>
         <div class="search__filter">
-         <!-- This need to be a drop down menu  of two things -->
-         <button class="search__btn">Filter </button>
+           <!-- This need to be a drop down menu  of two things -->
+           <button class="search__btn">Filter </button>
+           <ul class="filter__list">
+             <li class="filter__list-item"><a class="filter__list-link" href="#">a - z</a></li>
+             <li class="filter__list-item"><a class="filter__list-link" href="#">z - a</a></li>
+             <li class="filter__list-item"><a class="filter__list-link"href="#">new cards</a></li>
+             <li class="filter__list-item"><a class="filter__list-link"href="#">old cards</a></li>
+           </ul>
         </div>
       </div>
       <!-- TODO:  show up to 20 cards at a time -->
