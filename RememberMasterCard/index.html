@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,12 +32,26 @@
            <!-- This need to be a drop down menu  of two things -->
            <button class="search__btn">Filter </button>
            <ul class="filter__list">
-             <li class="filter__list-item"><a class="filter__list-link" href="#">a - z</a></li>
-             <li class="filter__list-item"><a class="filter__list-link" href="#">z - a</a></li>
-             <li class="filter__list-item"><a class="filter__list-link"href="#">new cards</a></li>
-             <li class="filter__list-item"><a class="filter__list-link"href="#">old cards</a></li>
+             <li class="filter__list-item"><button class="filter__list-link" href="#">a - z</button></li>
+             <li class="filter__list-item"><button class="filter__list-link" href="#">z - a</button></li>
+             <li class="filter__list-item"><button class="filter__list-link"href="#">new cards</button></li>
+             <li class="filter__list-item"><button class="filter__list-link"href="#">old cards</button></li>
            </ul>
         </div>
+      </div>
+      <div class="master">
+        <ul class="master__container">
+          <!-- once someone clicks on one of these
+          cards it goes to the backend and gets the infromation
+          associated with the cards unique id
+        -->
+          <li class="master__items">
+            <a  href="#" class="master__links">
+              <span class="master__title">Working  on my dreams</span>
+              <span class="master__date">November 2, 2018</span>
+            </a>
+          </li>
+        </ul>
       </div>
       <!-- TODO:  show up to 20 cards at a time -->
       <!-- TODO:  navigation through master card if there are more than 20 master cards -->

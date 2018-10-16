@@ -92,20 +92,31 @@ html {
   margin-right: 10rem  !important; }
 
 .search {
-  height: 4.5rem;
+  min-height: 4.5rem;
   background-color: pink;
   width: 100%;
   display: flex;
   justify-content: center;
   font-size: 1.4rem;
   border-bottom: 1px solid #eee; }
+  @media only screen and (max-width: 500px) {
+    .search {
+      flex-direction: column; } }
 
 .search__name {
   flex: 0 0 400px;
   display: flex;
-  margin-right: 5px;
+  margin: 0 auto;
   position: relative;
   justify-content: center; }
+  @media only screen and (max-width: 600px) {
+    .search__name {
+      height: 6rem; } }
+  @media only screen and (max-width: 500px) {
+    .search__name {
+      flex: 0 0 40px;
+      margin: 0;
+      margin-bottom: 5px; } }
   .search__name--input {
     padding: .96em 1.5em;
     width: 80%;
@@ -159,10 +170,17 @@ html {
   width: 100px;
   display: flex;
   justify-content: flex-end;
-  position: relative; }
+  position: relative;
+  z-index: 10; }
+  @media only screen and (max-width: 500px) {
+    .search__filter {
+      height: 6em;
+      align-self: flex-end;
+      margin-bottom: 5px; } }
 
 .search__btn {
-  flex: 0 0 100%;
+  margin-right: 2rem;
+  flex: 0 0 100px;
   background-color: #eee;
   border-radius: 3px;
   border: none;
@@ -189,17 +207,20 @@ html {
 .filter__list {
   position: absolute;
   top: 60%;
-  display: none;
   background-color: #ccc;
   list-style: none;
   margin-top: 1rem;
   max-height: 200px;
-  width: 100px; }
+  width: 100px;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 1s; }
   .filter__list-item {
     margin-bottom: 1rem;
-    display: flex; }
-  .filter__list-link:link, .filter__list-link:visited {
-    text-decoration: none;
+    display: flex;
+    cursor: pointer; }
+  .filter__list-link {
+    border: none;
     padding: 1rem 2rem;
     flex: 1;
     background-color: pink;
@@ -208,7 +229,38 @@ html {
     transform: translateX(-10px); }
 
 .search__filter:hover .filter__list {
-  display: block; }
+  display: block;
+  transform: scaleY(1); }
+
+.master {
+  padding: 2rem; }
+  .master__container {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; }
+  .master__items {
+    display: flex;
+    flex: 0 0 200px;
+    margin-right: 1rem;
+    margin-bottom: 1rem; }
+  .master__links:link, .master__links:visited {
+    flex: 1;
+    color: #eee;
+    text-decoration: none;
+    background-color: grey;
+    height: 6rem;
+    border-radius: 2px;
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+  .master__title {
+    align-self: center;
+    font-size: 1.3em; }
+  .master__date {
+    position: absolute;
+    right: 20px;
+    bottom: 0; }
 
 .mastercard {
   margin: 0 2rem;
