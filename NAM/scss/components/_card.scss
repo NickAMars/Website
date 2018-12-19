@@ -1,0 +1,52 @@
+
+.card{
+  // height: 30rem;
+  width: 280px;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  overflow: hidden;
+  // background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+  //   background-image:url(../img/gears.jpg);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0,0.15);
+  // , url(../img/nat-5.jpg);
+  &__img{
+    height: 23rem;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-image:url(../img/gears.jpg);
+  }
+  &__title{
+    text-align: center;
+    text-decoration:underline;
+    font-weight: 900;
+    margin: 1rem 0;
+  }
+
+  &__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+        // height: 100%;
+  }
+  &__item{
+    display:flex;
+  }
+  &__link:link, &__link:visited{
+    text-decoration: none;
+    width: 7rem;
+    // align-self: stretch;
+    background-color: #F00;
+    border-radius: 3px;
+  }
+
+  &-svg__icon{
+    width:100%;
+    height:3rem;
+    fill: black;
+    // height: 100%;
+    // margin-right: 2rem;
+    // fill: currentColor;
+  }
+}

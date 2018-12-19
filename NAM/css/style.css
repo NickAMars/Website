@@ -61,7 +61,8 @@ body {
   letter-spacing: .2em;
   font-weight: 900;
   text-align: center;
-  font-style: italic; }
+  font-style: italic;
+  margin-bottom: 2rem; }
 
 .svg__heading {
   width: 100%;
@@ -99,6 +100,40 @@ body {
     .list__items:nth-child(2n) {
       flex: 0 1 50%; } }
 
+.card {
+  width: 280px;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15); }
+  .card__img {
+    height: 23rem;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-image: url(../img/gears.jpg); }
+  .card__title {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 900;
+    margin: 1rem 0; }
+  .card__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+  .card__item {
+    display: flex; }
+  .card__link:link, .card__link:visited {
+    text-decoration: none;
+    width: 7rem;
+    background-color: #F00;
+    border-radius: 3px; }
+  .card-svg__icon {
+    width: 100%;
+    height: 3rem;
+    fill: black; }
+
 .header {
   height: 200px;
   width: 100%;
@@ -130,3 +165,7 @@ body {
   .gear__image--2 {
     width: 100px;
     height: 200px; }
+
+.project__container {
+  display: flex;
+  flex-wrap: wrap; }
